@@ -1,0 +1,14 @@
+<idea-plugin>
+  <id>com.github.zhscn.vertico</id>
+  <name>Vertico Find File</name>
+  <vendor>zhscn</vendor>
+  <description><![CDATA[Emacs find-file with Vertico: browse from the current file's directory,
+    complete path segments from the keyboard, and create files by typing a path that does not exist.]]></description>
+  <depends>com.intellij.modules.platform</depends>
+  <actions>
+    <action id="Vertico.FindFile" class="com.github.zhscn.vertico.FindFileAction" text="Find File (Vertico)"
+            description="Open or create a file by completing its path">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt shift F"/>
+    </action>
+  </actions>
+</idea-plugin>
